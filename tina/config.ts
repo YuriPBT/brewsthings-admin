@@ -101,4 +101,4 @@ export default defineConfig({
 
 
 // Trigger Tina Cloud branch registration
-// Trigger Tina Cloud branch registration
+// Trigger Tina Cloud branch registration// Reindex Tina Cloud after reconnect

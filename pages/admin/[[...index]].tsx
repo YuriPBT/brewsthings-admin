@@ -1,8 +1,6 @@
-// /pages/admin/[[...index]].tsx
 import dynamic from "next/dynamic";
 
-// Importa il modulo admin solo lato client
-const TinaAdmin = dynamic(() => import("../../tina/admin"), {
+const TinaAdmin = dynamic(() => import("tinacms").then(m => m.TinaAdmin), {
   ssr: false,
 });
 

@@ -1,3 +1,4 @@
+import path from "path";
 import { defineConfig } from "tinacms";
 
 const branch =
@@ -8,8 +9,13 @@ const branch =
 
 export default defineConfig({
   branch,
-  clientId: process.env.NEXT_PUBLIC_TINA_CLIENT_ID!, // ID Tina Cloud
-  token: process.env.TINA_TOKEN!, // Token Tina Cloud
+  // In locale non servono credenziali cloud
+  clientId: null,
+  token: null,
+
+  // Percorso locale ai contenuti
+  localContentPath: path.join(process.cwd()),
+
   build: {
     outputFolder: "admin", // cartella generata per l'admin
     publicFolder: "public", // cartella pubblica per media
@@ -98,9 +104,3 @@ export default defineConfig({
     ],
   },
 });
-
-
-// Trigger Tina Cloud branch registration
-// Trigger Tina Cloud branch registration// Reindex Tina Cloud after reconnect
-// Reindex Tina Cloud after reconnect
-// Trigger Tina Cloud after token fix

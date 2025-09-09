@@ -104,3 +104,4 @@ export default defineConfig({
 // Trigger Tina Cloud branch registration// Reindex Tina Cloud after reconnect
 // Reindex Tina Cloud after reconnect
 // Trigger Tina Cloud after token fix
+// First commit on tina-admin for Tina Cloud
